@@ -1,0 +1,32 @@
+<div class="wrapper">
+
+  <app-headerbar></app-headerbar>
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <app-sidebar-logo></app-sidebar-logo>
+
+    <app-sidebar></app-sidebar>
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <app-breadcrumb></app-breadcrumb>
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <router-outlet></router-outlet>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <app-rightbar></app-rightbar>
+
+  <!-- Main Footer -->
+  <app-footer></app-footer>
+</div>
