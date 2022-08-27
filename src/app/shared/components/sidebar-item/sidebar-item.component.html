@@ -1,7 +1,20 @@
-<a href="#" class="nav-link active">
-  <i class="nav-icon fas fa-home"></i>
+<a [routerLink]="children.length == 0 ? link : null" class="nav-link" [ngClass]="isMenuActive">
+  <i class="nav-icon fas" [ngClass]="icon"></i>
   <p>
-    Home
-    <ng-content></ng-content>
+    {{ title }}
+    <i class="right fas fa-angle-left" *ngIf="children.length > 0"></i>
   </p>
 </a>
+<ul class="nav nav-treeview" *ngIf="children.length > 0">
+  <li *ngFor="let child of children" class="nav-item">
+    <a [routerLink]="child.link" class="nav-link" [ngClass]="isMenuActive">
+      <i class="far fa-circle nav-icon"></i>
+      <p>{{ child.title }}</p>
+    </a>
+  </li>
+</ul>
+
+<!-- <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+  <i class="nav-icon fas fa-file"></i>
+  <p>Documentation</p>
+</a> -->

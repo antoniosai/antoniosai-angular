@@ -5,6 +5,8 @@ import { SidebarSearchComponent } from './sidebar-search/sidebar-search.componen
 import { SidebarLogoComponent } from './sidebar-logo/sidebar-logo.component';
 import { RightbarComponent } from './rightbar/rightbar.component';
 import { SidebarProfileComponent } from './sidebar-profile/sidebar-profile.component';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { SidebarProfileComponent } from './sidebar-profile/sidebar-profile.compo
     RightbarComponent,
   ],
   imports: [
+    RouterModule,
+    CommonModule,
   ],
   providers: [
   ],

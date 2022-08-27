@@ -1,0 +1,7 @@
+a:hover {
+  background-color: #f3f3f3;
+}
+
+.nav-pills .nav-link:hover {
+  color: white;
+}
