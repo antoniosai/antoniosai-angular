@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "antoniosai": {
+      "hosting": {
+        "antoniosai.id": [
+          "antoniosai"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "antoniosai"
+  }
+}

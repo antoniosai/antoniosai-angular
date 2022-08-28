@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "antoniosai.id:build:production",
+            "firebaseProject": "antoniosai",
+            "firebaseHostingSite": "antoniosai"
+          }
         }
       }
     }
