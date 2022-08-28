@@ -5,6 +5,7 @@ import { PostComponent } from './post/post.component';
 import { PostModule } from './post/post.module';
 import { PortofolioComponent } from './portofolio/portofolio.component';
 import { SkillComponent } from './skill/skill.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SkillComponent } from './skill/skill.component';
   ],
   imports: [
     PostModule,
+    SharedModule,
   ],
   providers: [
   ],

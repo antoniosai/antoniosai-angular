@@ -18,6 +18,12 @@ export class SidebarComponent implements OnInit {
       children: [],
     },
     {
+      link: 'profile',
+      icon: 'fa-user',
+      title: 'Profile',
+      children: [],
+    },
+    {
       link: 'post',
       icon: 'fa-clipboard',
       title: 'My Post',

@@ -1,5 +1,9 @@
+.nav-link {
+  color: white;
+}
 a:hover {
   background-color: #f3f3f3;
+  cursor: pointer;
 }
 
 .nav-pills .nav-link:hover {

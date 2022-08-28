@@ -1,1 +1,24 @@
-<p>home works!</p>
+<app-breadcrumb
+  title="Home" 
+  [links]="[
+    {title: 'Home', link: ''},
+    {title: 'My Post', link: 'post'},
+    {title: 'Tutorial', link: 'post/tutorial'},
+  ]"
+>
+  <button class="btn btn-primary"><i class="fa fa-download"></i> Download My Resume</button>
+</app-breadcrumb>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+      <div class="card-body text-white">
+        <h3>Welcome to My Website</h3>
+        <p>The purpose of this website is as a means for me to share experiences, tips & tricks, little notes about Software Development and also as my Portfolio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+
+  </div>
+</div>
+
